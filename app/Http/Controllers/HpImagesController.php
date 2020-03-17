@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Weidner\Goutte\GoutteFacade as GoutteFacade;
 use App\HpImage;
+<<<<<<< HEAD
 use Storage;
+=======
+>>>>>>> origin/master
 
 class HpImagesController extends Controller
 {
@@ -73,6 +76,7 @@ class HpImagesController extends Controller
         $items = HpImage::find($id);
         return view('hp_images.more', compact('items'));
     }
+
     
     public function favorite()
     {
